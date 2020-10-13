@@ -1,1 +1,15 @@
-
+import * as firebase from "firebase"
+require("@firebase/firestore")
+    
+    var firebaseConfig = {
+        apiKey: "AIzaSyDiM3HskhI3NB43qO0VYzBzsEz84eYujao",
+    authDomain: "library-64a22.firebaseapp.com",
+    databaseURL: "https://library-64a22.firebaseio.com",
+    projectId: "library-64a22",
+    storageBucket: "library-64a22.appspot.com",
+    messagingSenderId: "592111711379",
+    appId: "1:592111711379:web:9e09f3a9b94728c42f4966"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+export default firebase.firestore();
